@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adii Video Site</title>
+
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            background: black;
+            color: white;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: red;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        video {
+            width: 90%;
+            max-width: 400px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>THIS IS FOR YOU </h1>
+    <p>ANSH 💦💦</p>
+
+    <!-- VIDEO -->
+    <video id="video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <br>
+
+    <!-- VIDEO BUTTONS -->
+    <button onclick="playVideo()">▶ Play Video</button>
+    <button onclick="pauseVideo()">⏸ Pause Video</button>
+
+    <br><br>
+
+    <!-- AUDIO -->
+    <audio id="audio">
+        <source src="audio.m4a" type="audio/mp4">
+    </audio>
+
+    <!-- AUDIO BUTTONS -->
+    <button onclick="playAudio()">🔊 Play Sound</button>
+    <button onclick="pauseAudio()">🔇 Stop Sound</button>
+
+    <script>
+        function playVideo() {
+            document.getElementById("video").play();
+        }
+
+        function pauseVideo() {
+            document.getElementById("video").pause();
+        }
+
+        function playAudio() {
+            document.getElementById("audio").play();
+        }
+
+        function pauseAudio() {
+            document.getElementById("audio").pause();
+        }
+    </script>
+
+</body>
+</html>
